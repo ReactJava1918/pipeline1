@@ -1,0 +1,147 @@
+
+kubectl get all
+kubectl apply -f  G:\kuber\kubernetes\yaml\k1.yaml
+kubectl describe pods nginx
+kubectl api-versions
+kubectl api-resources(pods,deployement)
+kubectl explain pod
+
+
+
+kubectl run nginx --image=nginx 
+
+kubectl explain deployment
+kubectl explain pod
+kubectl explain namespace
+
+Create:-
+=================
+
+kubectl create -f  G:\kuber\kubernetes\yaml\deployee.yaml
+kubectl create -f  G:\kuber\kubernetes\yaml\twocon.yaml
+kubectl apply -f  G:\kuber\kubernetes\yaml\deployee.yaml
+kubectl create -f  sd.yaml
+
+kubectl apply -f  G:/kuber/kubernetes/yaml/twocon.yaml
+
+
+describe:-
+================
+
+kubectl describe pod
+kubectl describe deployement 
+
+
+Rooluts
+======
+>kubectl rollout undo deployment/nginx-deployment
+>kubectl rollout history deployment/nginx-deployment
+
+To see changes in each versions
+==============================
+kubectl rollout history deployment/nginx-deployment --revision=1
+kubectl rollout history deployment/nginx-deployment --revision=2
+kubectl rollout history deployment/nginx-deployment --revision=3
+
+
+To Undo to particular revision
+============================
+kubectl rollout undo deployment/nginx-deployment -- to-revision=3
+
+NameSpaces:
+============
+kubectl get namespaces
+kubectl create namespace trietree
+kubectl get pods -n trietree
+
+To set Namspace permentaley
+============================
+
+
+
+kubectl config set-context --current --namespace=default
+To check namespace
+===================
+
+kubectl config view  
+
+To get Pods from NameSpace
+==========================
+kubectl get pods -n trietree
+
+DashBoard:-
+===============
+>kubectl get  all -n kubernetes-dashboard
+To GET ALL DETATLS FROM ALL NAMESPACES
+=========================================
+>kubectl get  pods --all-namespaces
+>kubectl get  pods -A
+
+
+Lables:-
+---------------------
+>kubectl get all --show labels
+>kubectl get all --selector='app=pod'(working in gitbash)
+
+
+
+To Get IPS of Pods
+======================
+kubectl get   pods  -o wide
+kubectl get node -o wide
+http://192.168.59.100:30021/employee
+
+To Login TO containers
+========================
+
+kubectl exec -it <podname> -c <containername>
+
+kubectl exec -it    nginx2c-deployment -c   nginx1 \bin\sh
+
+
+ kubectl exec -it  nginx2c-deployment-556b7bdd88-w6mbq -c nginx1  /bin/sh
+
+
+==================
+
+
+
+Trouble Shooting Kubernetes
+============================
+C:\Users\siva>kubectl logs label-demo
+
+
+ingress
+========
+docker ps | grep -i ingress
+
+
+Mapping ec2-public instance to minikube ip
+===========================================
+>kubectl proxy --address 0.0.0.0  --accept-hosts '.*'
+
+
+Stagey of creating pods:-
+--------------------------------
+1)Rolling-(zero downtime)
+2)Recreate-(we can't achieve zero downtime)
+
+
+
+Autoscaling
+===================
+kubectl autoscale deployement <deployement-name>  --min=5 --max=20 --cpu-percent=70
+
+
+url
+=====
+http://127.0.0.1:52298/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
+
+=============================================================================================================================
+*****************************************************************************************************************************
+Angular Commands:
+****************************************************************************************************************************
+==============================================================================================================================
+
+>npm -version(node version)
+>ng --version(angular version)
