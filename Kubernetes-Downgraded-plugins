@@ -1,0 +1,10 @@
+Downgrade plugins version
+Jackson 2 API v2.10.0,
+
+Kubernetes v1.21.3,
+
+Kubernetes Client API v4.6.3-1,
+
+Kubernetes Continuous Deploy v2.1.2,
+
+Kubernetes Credentials v0.5.0
