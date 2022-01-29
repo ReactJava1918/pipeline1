@@ -1,0 +1,8 @@
+ 
+  
+ cat  /root/.minikube/profiles/minikube/client.key | base64 -w 0; echo
+
+
+
+ 
+ 
