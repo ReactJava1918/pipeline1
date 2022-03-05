@@ -1,4 +1,10 @@
+Installing Minikube and Kubectl
+====================================
 https://phoenixnap.com/kb/install-minikube-on-ubuntu
+
+Installing Docker
+======================
+https://www.hostinger.in/tutorials/how-to-install-docker-on-ubuntu
 
 To give Permssion to folders in linux:-
 =========================================
@@ -9,4 +15,11 @@ Command for aadding doocker to usergroup
 ========================================
 usermod -aG docker ubuntu
 
+For Installing Contrack
+==============================
+ sudo apt  install conntrack
 
+
+To start  minikube cluster
+=============================
+ minikube start --driver=none
