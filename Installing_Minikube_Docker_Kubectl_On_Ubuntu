@@ -5,5 +5,8 @@ To give Permssion to folders in linux:-
 sudo chmod 755 /usr/local/bin/minikube
 sudo chmod 777 /usr/local/bin/minikube
 
+Command for aadding doocker to usergroup
+========================================
+usermod -aG docker ubuntu
 
 
