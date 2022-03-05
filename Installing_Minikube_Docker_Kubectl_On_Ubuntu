@@ -3,3 +3,7 @@ https://phoenixnap.com/kb/install-minikube-on-ubuntu
 To give Permssion to folders in linux:-
 =========================================
 sudo chmod 755 /usr/local/bin/minikube
+sudo chmod 777 /usr/local/bin/minikube
+
+
+
