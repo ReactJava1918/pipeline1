@@ -23,3 +23,7 @@ For Installing Contrack
 To start  minikube cluster
 =============================
  minikube start --driver=none
+
+Command to see kubernetes config file in Minikube
+================================
+ kubectl config view
