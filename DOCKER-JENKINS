@@ -1,3 +1,23 @@
 Seeting up pipleine
-=======================
+==============sudo usermod -aG docker jenkins
+
+ 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-continuous-integration-pipelines-in-jenkins-on-ubuntu-20-04
+
+
+JENKINS_INSTALATION
+====================
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/jenkins-ubuntu-20-install-git-jdk-java-ci-cd
+
+
+Adding JENKINS TO DOCKER GROUP
+====================================
+
+sudo usermod -aG docker jenkins
+
+You can list the members of the docker group to confirm that the jenkins user has been added successfully:
+========================================================================================================
+ grep docker /etc/group
+
+
+
